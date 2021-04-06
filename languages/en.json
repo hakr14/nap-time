@@ -1,3 +1,5 @@
 {
-    "MODULE.hello": "hello"
+    "NAPTIME.Button": "Prompt Players for Rests",
+    "NAPTIME.Dialog.Title": "Nap Time",
+    "NAPTIME.Dialog.Content": "Which type of rest do you want?"
 }

@@ -33,9 +33,10 @@
     {
       "lang": "en",
       "name": "English",
-      "path": "lang/en.json"
+      "path": "languages/en.json"
     }
   ],
+  "socket": true,
   "system":"dnd5e",
   "allowBugReporter":true,
   "url": "This is auto replaced",
