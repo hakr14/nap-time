@@ -9,9 +9,9 @@ Hooks.once('init', async function() {
 Hooks.on("getSceneControlButtons", addRestButton); //add the button for this to the menu
 
 function addRestButton(buttons) {
-    let tilesButton = buttons.find(b => b.name === "token")
-    if (tilesButton) {
-        tilesButton.tools.push({
+    let tokenButton = buttons.find(b => b.name === "token")
+    if (tokenButton) {
+        tokenButton.tools.push({
             name: "nap-time",
             title: game.i18n.localize('NAPTIME.Button'),
             icon: "fas fa-bed",
