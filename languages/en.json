@@ -1,5 +1,25 @@
 {
     "NAPTIME.Button": "Prompt Players for Rests",
     "NAPTIME.Dialog.Title": "Nap Time",
-    "NAPTIME.Dialog.Content": "Which type of rest do you want?"
+    "NAPTIME.Dialog.Content": "Which type of rest do you want?",
+
+    "NAPTIME.Settings.GMNoDialog": "GM Side (no dialog)",
+    "NAPTIME.Settings.GMDialog": "GM side (with dialog)",
+    "NAPTIME.Settings.Players": "Player side",
+    "NAPTIME.Settings.None": "None",
+
+    "NAPTIME.Settings.CharacterLong.Name": "Long Rests: Characters",
+    "NAPTIME.Settings.CharacterLong.Hint": "How should Long Rests be resolved for characters which are assigned to a user?",
+
+    "NAPTIME.Settings.CharacterShort.Name": "Short Rests: Characters",
+    "NAPTIME.Settings.CharacterShort.Hint": "How should Short Rests be resolved for characters which are assigned to a user?",
+
+    "NAPTIME.Settings.OtherLong.Name": "Long Rests: Others",
+    "NAPTIME.Settings.OtherLong.Hint": "How should Long Rests be resolved for characters which are not assigned to a user?",
+
+    "NAPTIME.Settings.OtherShort.Name": "Short Rests: Others",
+    "NAPTIME.Settings.OtherShort.Hint": "How should Short Rests be resolved for characters which are not assigned to a user?",
+
+    "NAPTIME.autoHD": "Automatic Hit Dice:",
+    "NAPTIME.autoHDThreshold": "Damage threshold to stop rolling:"
 }
