@@ -64,6 +64,7 @@ function restDialog() {
 <h2> ${shortRestText} </h2>
 <label for="autoHD">${game.i18n.localize("NAPTIME.AutoHD")}</label>
 <input type="checkbox" id="autoHD" name="autoHD" checked>
+<br/>
 <label for="autoHDThreshold">${game.i18n.localize("NAPTIME.AutoHDThreshold")}</label>
 <input type="number" id="autoHDThreshold" name="autoHDThreshold">
 `
