@@ -20,6 +20,9 @@
     "NAPTIME.Settings.OtherShort.Name": "Short Rests: Others",
     "NAPTIME.Settings.OtherShort.Hint": "How should Short Rests be resolved for characters which are not assigned to a user?",
 
+    "NAPTIME.Settings.Offline.Name": "Handle Offline Characters as Others?",
+    "NAPTIME.Settings.Offline.Hint": "If selected, characters assigned to offline users will be resolved as 'Others' as selected above.  Otherwise, they will be resolved as 'Characters'",
+
     "NAPTIME.AutoHD": "Automatic Hit Dice:",
     "NAPTIME.AutoHDThreshold": "Damage threshold to stop rolling:"
 }

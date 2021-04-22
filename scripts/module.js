@@ -102,7 +102,7 @@ async function shortRestCallback(html){
 
     let characterIDs=[]
     for (let user of game.users){
-        if(user?.character) {
+        if(user.character && (!game.settings.get("nap-time", "offlineMode") || user.active)) {
             characterIDs.push(user.character.id)
         }
     }
@@ -158,7 +158,7 @@ async function longRestCallback(html){
 
     let characterIDs=[]
     for (let user of game.users){
-        if(user?.character) {
+        if(user.character && (!game.settings.get("nap-time", "offlineMode") || user.active)) {
             characterIDs.push(user.character.id)
         }
     }

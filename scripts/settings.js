@@ -54,5 +54,14 @@ function registerSettings(){
             "none": game.i18n.localize("NAPTIME.Settings.None")
         },
         default: "none"
+    });
+    game.settings.register("nap-time", "offlineMode",{
+        name: "NAPTIME.Settings.Offline.Name",
+        hint: "NAPTIME.Settings.Offline.Hint",
+        scope: "global",
+        type: Boolean,
+        config: true,
+        default: false
     })
+
 }
