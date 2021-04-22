@@ -3,14 +3,12 @@ Hooks.once("init", async function() {
 })
 Hooks.on("getSceneControlButtons", addRestButton); //add the button for this to the menu
 
-Hooks.on("renderShortRestDialog", (dialog) => {
-    dialog.data.title = dialog.data.title + ": " + dialog.actor.name;
-    dialog.render(true)
+Hooks.on("renderShortRestDialog", (dialog, html) => {
+    html.find(".window-title").text(`${dialog.data.title}: ${dialog.actor.name}`);
 })
 
-Hooks.on("renderLongRestDialog", (dialog)=> {
-    dialog.data.title = dialog.data.title + ": " + dialog.actor.name;
-    dialog.render(true)
+Hooks.on("renderLongRestDialog", (dialog, html) => {
+    html.find(".window-title").text(`${dialog.data.title}: ${dialog.actor.name}`);
 })
 
 async function restResolve(data, actor){
@@ -98,13 +96,15 @@ async function shortRestCallback(html){
     )
     let data={operation:"shortRest"};
     if(shortDialogSkip){
-        data.autoHD = html.getElementById("autoHD").checked;
-        data.autoHDThreshold = html.getElementById("autoHDThreshold").value;
+        data.autoHD = html.find("input#autoHD")[0].checked;
+        data.autoHDThreshold = html.find("input#autoHDThreshold")[0].value;
     }
 
     let characterIDs=[]
     for (let user of game.users){
-        characterIDs.push(user.character.id)
+        if(user?.character) {
+            characterIDs.push(user.character.id)
+        }
     }
 
     let otherIDs = []
@@ -153,12 +153,14 @@ async function longRestCallback(html){
     )
     let data={operation:"longRest"};
     if(longDialogSkip){
-        data.newDay = html.getElementById("newDay").checked;
+        data.newDay = html.find("input#newDay")[0].checked;
     }
 
     let characterIDs=[]
     for (let user of game.users){
-        characterIDs.push(user.character.id)
+        if(user?.character) {
+            characterIDs.push(user.character.id)
+        }
     }
 
     let otherIDs = []

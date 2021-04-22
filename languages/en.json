@@ -5,7 +5,7 @@
 
     "NAPTIME.Settings.GMNoDialog": "GM Side (no dialog)",
     "NAPTIME.Settings.GMDialog": "GM side (with dialog)",
-    "NAPTIME.Settings.Players": "Player side",
+    "NAPTIME.Settings.Player": "Player side",
     "NAPTIME.Settings.None": "None",
 
     "NAPTIME.Settings.CharacterLong.Name": "Long Rests: Characters",
@@ -20,6 +20,6 @@
     "NAPTIME.Settings.OtherShort.Name": "Short Rests: Others",
     "NAPTIME.Settings.OtherShort.Hint": "How should Short Rests be resolved for characters which are not assigned to a user?",
 
-    "NAPTIME.autoHD": "Automatic Hit Dice:",
-    "NAPTIME.autoHDThreshold": "Damage threshold to stop rolling:"
+    "NAPTIME.AutoHD": "Automatic Hit Dice:",
+    "NAPTIME.AutoHDThreshold": "Damage threshold to stop rolling:"
 }

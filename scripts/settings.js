@@ -6,11 +6,12 @@ function registerSettings(){
         hint: "NAPTIME.Settings.CharacterShort.Hint",
         scope: "global",
         type: String,
+        config: true,
         choices:{
             "gmnodialog": game.i18n.localize("NAPTIME.Settings.GMNoDialog"),
             "gmdialog": game.i18n.localize("NAPTIME.Settings.GMDialog"),
             "player": game.i18n.localize("NAPTIME.Settings.Player"),
-            "none": game.i18n.localize("NAPTIME.Settings.none")
+            "none": game.i18n.localize("NAPTIME.Settings.None")
         },
         default: "player"
     });
@@ -19,10 +20,11 @@ function registerSettings(){
         hint: "NAPTIME.Settings.OtherShort.Hint",
         scope: "global",
         type: String,
+        config: true,
         choices:{
             "gmnodialog": game.i18n.localize("NAPTIME.Settings.GMNoDialog"),
             "gmdialog": game.i18n.localize("NAPTIME.Settings.GMDialog"),
-            "none": game.i18n.localize("NAPTIME.Settings.none")
+            "none": game.i18n.localize("NAPTIME.Settings.None")
         },
         default: "none"
     });
@@ -31,11 +33,12 @@ function registerSettings(){
         hint: "NAPTIME.Settings.CharacterLong.Hint",
         scope: "global",
         type: String,
+        config: true,
         choices:{
             "gmnodialog": game.i18n.localize("NAPTIME.Settings.GMNoDialog"),
             "gmdialog": game.i18n.localize("NAPTIME.Settings.GMDialog"),
             "player": game.i18n.localize("NAPTIME.Settings.Player"),
-            "none": game.i18n.localize("NAPTIME.Settings.none")
+            "none": game.i18n.localize("NAPTIME.Settings.None")
         },
         default: "player"
     });
@@ -44,10 +47,11 @@ function registerSettings(){
         hint: "NAPTIME.Settings.OtherLong.Hint",
         scope: "global",
         type: String,
+        config: true,
         choices:{
             "gmnodialog": game.i18n.localize("NAPTIME.Settings.GMNoDialog"),
             "gmdialog": game.i18n.localize("NAPTIME.Settings.GMDialog"),
-            "none": game.i18n.localize("NAPTIME.Settings.none")
+            "none": game.i18n.localize("NAPTIME.Settings.None")
         },
         default: "none"
     })
