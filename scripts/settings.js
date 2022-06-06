@@ -62,6 +62,22 @@ function registerSettings(){
         type: Boolean,
         config: true,
         default: false
+    });
+    game.settings.register("nap-time", "shortRestTime",{
+        name: "NAPTIME.Settings.ShortRestTime.Name",
+        hint: "NAPTIME.Settings.ShortRestTime.Hint",
+        scope: "global",
+        type: Number,
+        config: true,
+        default: 1
+    }),
+    game.settings.register("nap-time", "longRestTime",{
+        name: "NAPTIME.Settings.LongRestTime.Name",
+        hint: "NAPTIME.Settings.LongRestTime.Hint",
+        scope: "global",
+        type: Number,
+        config: true,
+        default: 8
     })
 
 }
