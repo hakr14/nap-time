@@ -3,14 +3,6 @@ Hooks.once("init", async function() {
 })
 Hooks.on("getSceneControlButtons", addRestButton); //add the button for this to the menu
 
-Hooks.on("renderShortRestDialog", (dialog, html) => {
-    html.find(".window-title").text(`${dialog.data.title}: ${dialog.actor.name}`);
-})
-
-Hooks.on("renderLongRestDialog", (dialog, html) => {
-    html.find(".window-title").text(`${dialog.data.title}: ${dialog.actor.name}`);
-})
-
 async function restResolve(data, actor){
     actor = game.actors.get(data.actorID) ?? game.user.character //if no actor specified in data, try the user's character
     if (!actor || actor.data.type !== "character") return; //if still no actor, or if actor is not a character, bail out
@@ -89,6 +81,7 @@ function restDialog() {
 }
 
 async function shortRestCallback(html){
+
     let characterResolve = game.settings.get("nap-time", "characterShort");
     let otherResolve = game.settings.get("nap-time", "otherShort");
     let shortDialogSkip = (
@@ -143,6 +136,7 @@ async function shortRestCallback(html){
             }
             break;
     }
+    game.time.advance(game.settings.get("nap-time","shortRestTime")*3600) //setting gives time advancement in hours, so multiply by 3600 to get it in seconds
 }
 
 async function longRestCallback(html){
@@ -199,4 +193,6 @@ async function longRestCallback(html){
             }
             break;
     }
+    game.time.advance(game.settings.get("nap-time","longRestTime")*3600) //setting gives time advancement in hours, so multiply by 3600 to get it in seconds
+    game.time.advance
 }
