@@ -1,12 +1,7 @@
 {
-  "name": "nap-time",
   "title": "Nap Time (5E)",
   "description": "Gives the GM a button which pops up the short/long rest dialog for all players",
   "version": "This is auto replaced",
-  "library": "false",
-  "manifestPlusVersion": "1.0.0",
-  "minimumCoreVersion": "0.7.5",
-  "compatibleCoreVersion": "0.7.9",
   "authors": [
     {
       "name": "BadIdeasBureau",
@@ -14,21 +9,9 @@
       "discord": "BadIdeasBureau#7024"
     }
   ],
-  "dependencies": [
-
-  ],
-  "conflicts": [
-    
-  ],
   "esmodules": [
     "/scripts/module.js",
-	"/scripts/settings.js"
-  ],
-  "scripts": [
-    
-  ],
-  "styles": [
-    
+    "/scripts/settings.js"
   ],
   "languages": [
     {
@@ -38,10 +21,16 @@
     }
   ],
   "socket": true,
-  "system":"dnd5e",
-  "allowBugReporter":true,
   "url": "This is auto replaced",
   "manifest": "This is auto replaced",
   "download": "This is auto replaced",
-  "bugs":"This is auto replaced"
+  "bugs": "This is auto replaced",
+  "id": "nap-time",
+  "compatibility": {
+    "minimum": "0.7.5",
+    "verified": "10"
+  },
+  "name": "nap-time",
+  "minimiumCoreVersion": "0.7.5",
+  "compatibleCoreVersion": "10"
 }

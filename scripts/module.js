@@ -1,5 +1,6 @@
 Hooks.once("init", async function() {
     game.socket.on("module.nap-time", restResolve);
+    CONFIG.compatibility.excludePatterns.push(new RegExp("/nap-time/"))
 })
 Hooks.on("getSceneControlButtons", addRestButton); //add the button for this to the menu
 
