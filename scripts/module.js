@@ -6,7 +6,7 @@ Hooks.on("getSceneControlButtons", addRestButton); //add the button for this to 
 
 async function restResolve(data, actor){
     actor = game.actors.get(data.actorID) ?? game.user.character //if no actor specified in data, try the user's character
-    if (!actor || actor.data.type !== "character") return; //if still no actor, or if actor is not a character, bail out
+    if (!actor || actor.type !== "character") return; //if still no actor, or if actor is not a character, bail out
     let restType = data.operation;
     if(restType === "shortRest") {
         let {autoHD, autoHDThreshold, dialog} = data;
@@ -104,7 +104,7 @@ async function shortRestCallback(html){
 
     let otherIDs = []
     for (let actor of game.actors){
-        if (actor.data.type === "character" && !characterIDs.includes(actor.id)){
+        if (actor.type === "character" && !characterIDs.includes(actor.id)){
             otherIDs.push(actor.id)
         }
     }
@@ -161,7 +161,7 @@ async function longRestCallback(html){
 
     let otherIDs = []
     for (let actor of game.actors){
-        if (actor.data.type === "character" && !characterIDs.includes(actor.id)){
+        if (actor.type === "character" && !characterIDs.includes(actor.id)){
             otherIDs.push(actor.id)
         }
     }

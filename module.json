@@ -27,10 +27,11 @@
   "bugs": "This is auto replaced",
   "id": "nap-time",
   "compatibility": {
-    "minimum": "0.7.5",
-    "verified": "10"
+    "minimum": 10,
+    "verified": "12.328",
+    "maximum": 12
   },
   "name": "nap-time",
-  "minimiumCoreVersion": "0.7.5",
-  "compatibleCoreVersion": "10"
+  "minimiumCoreVersion": "10",
+  "compatibleCoreVersion": "12"
 }
